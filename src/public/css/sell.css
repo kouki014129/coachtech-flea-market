@@ -1,0 +1,202 @@
+.sell {
+    padding: 72px 0 120px;
+}
+
+.sell__inner {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.sell__title {
+    margin: 0 0 48px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.sell__form {
+    width: 100%;
+}
+
+.sell__form-group {
+    margin-bottom: 36px;
+}
+
+.sell__label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.sell-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    border: 1px dashed #5f5f5f;
+    border-radius: 4px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.sell-image__preview {
+    position: absolute;
+    inset: 0;
+}
+
+.sell-image__preview-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.sell-image__button {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 165px;
+    height: 43px;
+    border: 2px solid #ff5555;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #ff5555;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.sell-image__input {
+    display: none;
+}
+
+.sell-section {
+    margin-top: 72px;
+}
+
+.sell-section__title {
+    margin: 0 0 36px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #5f5f5f;
+    color: #5f5f5f;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.sell-category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px 14px;
+}
+
+.sell-category__label {
+    display: inline-block;
+}
+
+.sell-category__input {
+    display: none;
+}
+
+.sell-category__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 90px;
+    height: 32px;
+    padding: 0 16px;
+    border: 2px solid #ff5555;
+    border-radius: 200px;
+    background-color: #fff;
+    color: #ff5555;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.sell-category__input:checked + .sell-category__button {
+    background-color: #ff5555;
+    color: #fff;
+}
+
+.sell__select {
+    width: 100%;
+    height: 45px;
+    padding: 0 16px;
+    border: 1px solid #5f5f5f;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.sell__input {
+    width: 100%;
+    height: 45px;
+    padding: 0 16px;
+    border: 1px solid #5f5f5f;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.sell__textarea {
+    width: 100%;
+    height: 125px;
+    padding: 12px 16px;
+    border: 1px solid #5f5f5f;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 16px;
+    resize: none;
+}
+
+.sell-price {
+    position: relative;
+}
+
+.sell-price__mark {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.sell-price__input {
+    width: 100%;
+    height: 45px;
+    padding: 0 16px 0 40px;
+    border: 1px solid #5f5f5f;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.sell__error-message {
+    margin: 8px 0 0;
+    color: #ff5555;
+    font-size: 16px;
+}
+
+.sell__submit-button {
+    display: block;
+    width: 100%;
+    height: 60px;
+    margin-top: 84px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5555;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    cursor: pointer;
+}

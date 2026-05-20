@@ -1,0 +1,66 @@
+.login {
+    padding-top: 118px;
+}
+
+.login__inner {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.login__title {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 54px;
+    text-align: center;
+    line-height: 1;
+}
+
+.login__form-group {
+    margin-bottom: 36px;
+}
+
+.login__label {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.login__input {
+    width: 100%;
+    height: 57px;
+    font-size: 18px;
+    border-radius: 4px;
+    border: 1px solid #5F5F5F;
+    padding: 0 16px;
+}
+
+.login__error-message {
+    color: #FF5555;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.login__submit-button {
+    display: block;
+    width: 100%;
+    height: 65px;
+    background-color: #FF5555;
+    color: #fff;
+    font-size: 26px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 80px;
+}
+
+.login__register-link {
+    font-weight: 400;
+    font-size: 20px;
+    color: #0073CC;
+    pointer-events: auto;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 24px;
+}
