@@ -4,11 +4,21 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\File;
 
 class ItemSeeder extends Seeder
 {
     public function run()
     {
+        $sourceDirectory = database_path('seeders/images/items');
+        $destinationDirectory = storage_path('app/public/items');
+
+        if (! File::exists($destinationDirectory)) {
+            File::makeDirectory($destinationDirectory, 0755, true);
+        }
+
+        File::copyDirectory($sourceDirectory, $destinationDirectory);
+
         $items = [
             [
                 'user_id' => 1,
@@ -119,7 +129,7 @@ class ItemSeeder extends Seeder
                 'condition' => '目立った傷や汚れなし',
                 'created_at' => now(),
                 'updated_at' => now(),
-            ]
+            ],
         ];
 
         DB::table('items')->insert($items);
