@@ -1,19 +1,24 @@
+cat > .gitignore <<'EOF'
 /vendor
 /node_modules
 .env
 .env.backup
 .env.production
+.env.testing
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
 .DS_Store
+
 /src/vendor
 /src/node_modules
 /src/.env
+/src/.env.testing
 /src/storage/logs/*.log
-echo "src/.env.testing" >> .gitignore
-echo "src/.env" >> .gitignore
-echo ".env" >> .gitignore
-echo ".env.testing" >> .gitignore
+
+# MySQL local data
+/docker/mysql/data/
+/docker/mysql/data/*
+EOF
